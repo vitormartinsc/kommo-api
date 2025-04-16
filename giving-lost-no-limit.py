@@ -5,7 +5,7 @@ import os
 # === CONFIGURAÇÃO ===
 ACCESS_TOKEN = os.getenv('KOMMO_ACCESS_TOKEN')  # Configure como variável de ambiente
 BASE_URL = 'https://vitorcarvalho.kommo.com'
-STATUS_ID = 83088607  # Etapa "Não possui limite"
+STATUS_ID = 83088611  # Etapa "Não possui limite"
 LOSS_STATUS_ID = 143
 LOSS_REASON_ID = 28218035  # Motivo "Sem limite"
 
@@ -22,7 +22,7 @@ def get_leads_by_status(status_id, limit=250):
 
     while True:
         params = {
-            'filter[statuses][0][status_id]': status_id,
+            'filter[status]': status_id,
             'page': page,
             'limit': limit
         }
