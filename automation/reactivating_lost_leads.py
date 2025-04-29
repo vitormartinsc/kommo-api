@@ -1,3 +1,5 @@
+# Arquivo renomeado para reactivate_lost_leads.py e movido para a pasta automation.
+
 import os
 import requests
 

@@ -1,7 +1,7 @@
 library(tidyverse)
 library(ggplot2)
 
-setwd("C:/Users/vitor/kommo-api")
+setwd("C:/Users/vitor/kommo-api/analysis")
 
 # Ler e processar os dados
 df <- read_csv('leads_database.csv') %>% 

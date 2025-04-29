@@ -83,7 +83,7 @@ df_resultado['Nome_Etapa'] = df_resultado['ID_Etapa'].map(mapa_status)
 df_resultado = df_resultado.sort_values(by='Quantidade', ascending=False)
 
 # === EXPORTAÇÃO
-nome_arquivo = f"entradas_por_etapa_{DATA_INICIAL}_a_{DATA_FINAL}.xlsx"
+nome_arquivo = f"analysis/entradas_por_etapa_{DATA_INICIAL}_a_{DATA_FINAL}.xlsx"
 df_resultado.to_excel(nome_arquivo, index=False)
 
 print(f"\n✅ Dados exportados para '{nome_arquivo}'")
